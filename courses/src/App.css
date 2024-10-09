@@ -1,6 +1,7 @@
-.App {
+/*.App {
   text-align: center;
 }
+*/
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +36,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  font-family: 'Century Gothic',sans-serif;
+}
+body {
+background-color: darkgrey;
+}
+
+
+.course-card {
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 260px;
+}
+.course-image{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+.course-title{
+  font-weight: 700;
+  font-size: 15px;
+  margin: 7px 0;
+}
+.instructor-image{
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+}
+.instructor-name{
+  font-weight: 400; 
+  font-size: 11px; 
+  color: gray
 }
