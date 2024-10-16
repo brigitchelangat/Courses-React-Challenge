@@ -11,6 +11,7 @@ import DataS from "../assets/images/DataS.jpg";
 import AI from "../assets/images/AI.jpg";
 
 
+
 const Course = () => {
     const [courses,setCourses] = useState([]);
     useEffect(() => {
@@ -41,21 +42,13 @@ const Course = () => {
       }
     };
 
-  /*const DomainImages = {
-      'Software Engineering': '../images/SE.jpg',
-      'User Interface Design': '../images/UI.png',
-      'Web Development': '../images/Web.jpg',
-      'Cloud Computing': '../images/Cloud.jpg',
-      'Data Science': '../images/DataS.jpg',
-      'Artificial Intelligence': '../images/AI.jpg'
-
-    };
-    */
     //JSX to be returned
     return (
-      <div>
+      <div className='courses'>
           {
           courses.map((course) => ( 
+           
+              
               <div className="course-card">
               <img src={getCourseImage(course.domain)} alt="Course" className="course-image" />
               <p className="course-title">{course.title}</p>
@@ -63,8 +56,8 @@ const Course = () => {
               (course.instructor === "Roy Kiprop")? roy : (course.instructor === "Brigit Chelangat")? brigitimage:defaultI } 
               alt="Instructor" className="instructor-image" />
               <span className="instructor-name">{course.instructor}</span>
-
-            </div>   
+              </div>  
+            
           ))
         }
         

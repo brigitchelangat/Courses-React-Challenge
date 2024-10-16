@@ -2,6 +2,9 @@
   text-align: center;
 }
 */
+* {
+  font-family: 'Century Gothic',sans-serif;
+}
 
 .App-logo {
   height: 40vmin;
@@ -28,23 +31,58 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  display: flex;
+  height: 100vh;
+}
+.nav{
+  background-color: #5c1b86;
+  padding: 10px;
+  width: 10%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  display: inline-block;
+}
+.student-img {
+  margin: 25px 2px 5px 0px;
+  text-align: center;
+}
+.nav h1 {
+  color: white;
+  margin: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+.nav h2 {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 7px 0 ;
 }
 
-* {
-  font-family: 'Century Gothic',sans-serif;
+.nav-list{
+  text-align: left;
 }
+.nav-list ul {
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+}
+.nav-list li {
+  margin-bottom: 10px;
+  color: white;
+}
+
 body {
-background-color: darkgrey;
+background-color: #fafafa;
+padding: 40px;
 }
 
+.courses {
+  display: inline-block;
+  width: 80%;
+}
 
 .course-card {
   background-color: white;
@@ -73,4 +111,13 @@ background-color: darkgrey;
   font-weight: 400; 
   font-size: 11px; 
   color: gray
+}
+
+@media only screen and (max-width: 700px) {
+.nav{
+  width: 25%;
+}
+.courses{
+  width: 75%;
+}
 }
