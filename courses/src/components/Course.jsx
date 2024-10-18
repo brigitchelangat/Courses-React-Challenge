@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import allCourses from "../data/courses.json";
-import ngeno from "../assets/images/ngeno.png";
-import brigitimage from "../assets/images/brigitimage.jpeg";
-import roy from "../assets/images/roy.jpg";
 import defaultI from "../assets/images/default.png"
 import SE from "../assets/images/SE.jpg";
 import Web from "../assets/images/Web.jpg";
 import Cloud from "../assets/images/Cloud.jpg";
 import DataS from "../assets/images/DataS.jpg";
 import AI from "../assets/images/AI.jpg";
+import { FaRegUser } from "react-icons/fa";
+import { BsClock } from "react-icons/bs";
+import { BsGlobe } from "react-icons/bs";
+
 
 
 
@@ -50,12 +51,22 @@ const Course = () => {
            
               
               <div className="course-card">
-              <img src={getCourseImage(course.domain)} alt="Course" className="course-image" />
-              <p className="course-title">{course.title}</p>
-              <img src= {(course.instructor === "Ngeno Victor") ? ngeno : 
-              (course.instructor === "Roy Kiprop")? roy : (course.instructor === "Brigit Chelangat")? brigitimage:defaultI } 
-              alt="Instructor" className="instructor-image" />
-              <span className="instructor-name">{course.instructor}</span>
+                <div className="course-image">
+                <img src={getCourseImage(course.domain)} alt="Course" />
+                </div>
+              <div className='course-details'>
+                <p className="course-title">{course.title}</p>
+                <FaRegUser className='course-icons first-icon' />
+                <span >{course.instructor}</span>
+                <BsClock className='course-icons' />
+                <span >{course.hours} Hours</span>
+                <BsGlobe className='course-icons' />
+                <span >Online</span>
+                <p className='course-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Possimus fuga maxime debitis exercitationem cupiditate neque accusantium dolores? Ratione enim alias debitis,
+                    illum temporibus at corrupti atque nobis, aliquam inventore esse!</p>
+              </div>
+                
               </div>  
             
           ))
