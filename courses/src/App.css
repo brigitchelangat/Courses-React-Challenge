@@ -67,13 +67,39 @@
 .nav-list ul {
   list-style: none;
   text-align: left;
-  padding: 10px;
+  padding: 7px;
 }
-.nav-list li {
-  margin-bottom: 10px;
+.nav-item {
+  margin: 3px;
   color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 5px;
+  height: 25px;
+  padding: 5px;
+}
+.nav-item:hover {
+  background-color: #d7c7e4;
+  color: #5c1b86;
+  font-weight: bold;
 }
 
+.nav-item:focus {
+  background-color: #d7c7e4; 
+}
+
+.nav-item:active {
+  background-color: #d7c7e4; 
+}
+.nav-icons{
+ vertical-align: middle;
+ padding-bottom: 3px;
+ padding-right: 11px;
+ padding-left: 2px;
+ font-size: 16px;
+
+}
 body {
 background-color: #fafafa;
 padding: 40px;
@@ -115,9 +141,18 @@ padding: 40px;
 
 @media only screen and (max-width: 700px) {
 .nav{
-  width: 25%;
+  width: 30%;
 }
 .courses{
-  width: 75%;
+  width: 70%;
 }
 }
+
+@media only screen and (min-width: 700px) {
+  .nav{
+    width: 13%;
+  }
+  .courses{
+    width: 87%;
+  }
+  }

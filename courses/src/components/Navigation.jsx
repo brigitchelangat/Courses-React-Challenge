@@ -1,6 +1,10 @@
 import React from 'react';
 import ngeno from "../assets/images/ngeno.png";
 //import icons
+import { BsGrid } from "react-icons/bs";
+import { BsGear } from "react-icons/bs";
+import { BsChatDots } from "react-icons/bs";
+import { BsCardChecklist } from "react-icons/bs";
 
 const Navigation = () => {
     return (
@@ -13,10 +17,10 @@ const Navigation = () => {
             <h2>Ngeno Victor</h2>
             <div className="nav-list" >
                 <ul>
-                    <li className="nav-item">Dashboard</li>
-                    <li className="nav-item">Course</li>
-                    <li className="nav-item">Chat</li>
-                    <li className="nav-item">Settings</li>
+                    <li className="nav-item"><BsGrid className='nav-icons' />Dashboard</li>
+                    <li className="nav-item"><BsCardChecklist  className='nav-icons' />Course</li>
+                    <li className="nav-item"><BsChatDots className='nav-icons' />Chat</li>
+                    <li className="nav-item"><BsGear className='nav-icons'/>Settings</li>
                 </ul>
             </div>
            
