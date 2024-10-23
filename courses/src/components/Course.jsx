@@ -52,20 +52,21 @@ const Course = () => {
               
               <div className="course-card">
                 <div className="course-image">
-                <img src={getCourseImage(course.domain)} alt="Course" />
+                  <img src={getCourseImage(course.domain)} alt="Course" />
                 </div>
-              <div className='course-details'>
-                <p className="course-title">{course.title}</p>
-                <FaRegUser className='course-icons first-icon' />
-                <span >{course.instructor}</span>
-                <BsClock className='course-icons' />
-                <span >{course.hours} Hours</span>
-                <BsGlobe className='course-icons' />
-                <span >Online</span>
-                <p className='course-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div className='course-details'>
+                  <p className="course-title">{course.title}</p>
+                  <FaRegUser className='course-icons first-icon' />
+                  <span >{course.instructor}</span>
+                  <BsClock className='course-icons' />
+                  <span >{course.hours} Hours</span>
+                  <BsGlobe className='course-icons' />
+                  <span >Online</span>
+                  <p className='course-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    Possimus fuga maxime debitis exercitationem cupiditate neque accusantium dolores? Ratione enim alias debitis,
-                    illum temporibus at corrupti atque nobis, aliquam inventore esse!</p>
-              </div>
+                    illum temporibus at corrupti atque nobis, aliquam inventore esse!
+                  </p>
+                </div>
                 
               </div>  
             
