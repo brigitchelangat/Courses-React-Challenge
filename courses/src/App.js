@@ -4,7 +4,7 @@ import Course from './components/Course';
 import Navigation from './components/Navigation';
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <Navigation/>
       <Course/>
     </div>

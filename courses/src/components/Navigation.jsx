@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ngeno from "../assets/images/ngeno.png";
 import {NavigationData} from "./NavigationData";
 import { MdLogout } from "react-icons/md";
-//import icons
-import { BsGrid, BsGear, BsChatDots, BsCardChecklist } from "react-icons/bs";
+
 
 const Navigation = () => {
     return (
@@ -12,14 +11,13 @@ const Navigation = () => {
             <div className="student-img">
                 <img src={ngeno} alt="student" />
             </div>
-
             <h2>Ngeno Victor</h2>
             <p>engenovic@gmail.com</p>
             <ul className="nav-list">
                     {
                         NavigationData.map((val,key) => {
                             return <li key={key} className='row' 
-                            id={window.location.pathname == val.link? "active" : ""}
+                            id={window.location.pathname === val.link? "active" : ""}
                             onClick={() => 
                             {window.location.pathname = val.link}}>
                                 <div id='icon'>{val.icon}</div>
