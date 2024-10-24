@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import allCourses from "../data/courses.json";
-import { FaRegUser, FaSearch } from "react-icons/fa";
+import { FaRegUser, FaSearch, FaFilter, FaToggleOn } from "react-icons/fa";
 import { BsClock, BsGlobe, BsHouseDoor } from "react-icons/bs";
+import {CohortData} from "./UpcomingCohorts";
 
 
 
@@ -18,13 +19,14 @@ const Course = () => {
         <h1>Explore Training Programs</h1>
         <div style={{ position: 'relative'}}>
         <FaSearch className='search-icon' />
-
-      {/* Search input */}
-      <input
+        <input
         type="text"
         placeholder="Search courses..."
         className='search'
-      />
+        />
+        <FaFilter className='filter-icon' size={19}/>
+        <FaToggleOn className='toggle' size={35}/>
+        <span>Available</span>
         </div>
       </div>
 
@@ -48,12 +50,15 @@ const Course = () => {
                 illum temporibus at corrupti atque nobis, aliquam inventore esse!
               </p>
             </div>
+            <div id="separator"></div>
+            <div className="upcoming-cohorts">
+
+            </div>
 
           </div>
-
         ))
       }
-
+      
     </div>
 
   );
